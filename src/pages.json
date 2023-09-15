@@ -1,0 +1,14 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index"
+			
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "应用名称",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
