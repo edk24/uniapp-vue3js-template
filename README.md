@@ -11,6 +11,8 @@
 
 - tailwindcss (原子化css)
 - postcss-rem-to-responsive-pixel (rem2rpx/px)
+- iconpark (字节跳动免费图标库)
+- less
 
 ## 安装 & 运行
 

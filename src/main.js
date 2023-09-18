@@ -3,6 +3,9 @@ import {
 } from "vue"
 import App from "./App.vue"
 
+// base css
+import "@/styles/base.css"
+
 // tailwind
 import "@/styles/tailwind.css"
 
