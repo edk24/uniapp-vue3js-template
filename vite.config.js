@@ -1,11 +1,10 @@
 import { defineConfig } from "vite";
 const path = require('path');
-import {
-  ViteWeappTailwindcssPlugin as vwt,
-  postcssWeappTailwindcssRename,
-} from "weapp-tailwindcss-webpack-plugin";
+import { UnifiedViteWeappTailwindcssPlugin as uvtw } from 'weapp-tailwindcss/vite'
 import uni from '@dcloudio/vite-plugin-uni'
 const isH5 = process.env.UNI_PLATFORM === "h5";
+const isApp = process.env.UNI_PLATFORM === 'app'
+const WeappTailwindcssDisabled = isH5 || isApp
 const postcssPlugins = [require("autoprefixer")(), require("tailwindcss")()];
 if (!isH5) {
   postcssPlugins.push(
@@ -15,13 +14,17 @@ if (!isH5) {
       transformUnit: "rpx",
     })
   );
-  postcssPlugins.push(postcssWeappTailwindcssRename());
 }
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    uni(), isH5 ? undefined : vwt()
+    uni(),
+    uvtw({
+      disabled: WeappTailwindcssDisabled
+    }),
+    // isH5 ? undefined : vwt(),
   ],
   resolve: {
     alias: {

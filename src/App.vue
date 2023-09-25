@@ -9,5 +9,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+// 自定义图标
+@import "./static/iconfont/iconfont.css";
 </style>

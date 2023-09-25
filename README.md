@@ -11,8 +11,8 @@
 
 - tailwindcss (原子化css)
 - postcss-rem-to-responsive-pixel (rem2rpx/px)
-- iconpark (字节跳动免费图标库)
-- less
+- uni-icons ([自定义图标方案参考](https://uniapp.dcloud.net.cn/component/uniui/uni-icons.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E6%A0%87))
+- sass
 
 ## 安装 & 运行
 
