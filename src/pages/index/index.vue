@@ -1,8 +1,12 @@
 <template>
-  <view class="container">
+  <view>
     hello
   </view>
 </template>
 
 <script setup>
 </script>
+
+<style>
+
+</style>
